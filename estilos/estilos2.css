@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Adicionado para facilitar o controle de tamanhos */
+}
+
+input {
+    width: 100%; 
+    margin-bottom: 1rem; /* Aumentado levemente */
+    padding: 0.8rem; /* Inputs mais altos ficam mais modernos */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Cantos arredondados */
+    font-family: "Work Sans", sans-serif;
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px; /* Arredondado para combinar com inputs */
+}
+
+/* --- Melhoria Visual no Body --- */
+body {
+    background-color: #f9f9f9; /* Um fundo levemente cinza destaca o 'main' branco */
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    margin: 80px auto; /* Aumentado para dar mais destaque a cada seção */
+    max-width: 1000px; /* Centraliza o conteúdo em telas grandes */
+}
+
+/* --- Cabeçalho e Navegação --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ffffff; /* Fundo branco no topo fica mais limpo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra leve para profundidade */
+    position: sticky; /* O menu agora acompanha a rolagem */
+    top: 0;
+    z-index: 1000;
+}
+
+/* --- Subheader (Hero Section) --- */
+.subheader {
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    justify-content: center;
+    padding: 100px 25px; /* Mais altura para impacto */
+    background: linear-gradient(135deg, rgb(174, 241, 174) 0%, #369831 100%); /* Gradiente */
+    color: white;
+    margin: 0; /* Ajustado para não colapsar com o main */
+    text-align: center;
+    border-radius: 0 0 50px 50px; /* Curva charmosa no final da seção */
+}
+
+.subheader h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subheader p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* --- Botão Estilizado --- */
+.btn {
+    display: inline-block;
+    border: none; /* Removida borda preta para visual mais limpo */
+    padding: 15px 30px;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Efeito de flutuar ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background-color: #1b5e20;
+}
+
+/* --- Grid de Palestrantes --- */
+.grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+article {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #369831; /* Detalhe colorido no topo do card */
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.03);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #222; /* Footer escuro passa mais seriedade */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Empilha itens em telas menores */
+    gap: 15px;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #aeF1ae;
+}
+
+.texto-footer {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* --- Tipografia e Detalhes --- */
+main {
+    background-color: transparent; /* Usa o fundo do body */
+    padding: 25px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+    border-left: 5px solid #369831;
+    padding-left: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+}
